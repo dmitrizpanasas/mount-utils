@@ -183,6 +183,7 @@ func (mounter *Mounter) MountSensitive(source string, target string, fstype stri
 		"glusterfs": {},
 		"ceph":      {},
 		"cifs":      {},
+                "panfs":     {},
 	}
 	if _, ok := fsTypesNeedMounter[fstype]; ok {
 		mounterPath = mounter.mounterPath
